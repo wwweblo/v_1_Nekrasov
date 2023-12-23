@@ -6,31 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_west_24" />
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="42dp"
         android:text="Настройки"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/backButton1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/backButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -43,41 +33,47 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FF5630"
+        android:padding="15dp"
         android:text="Отображать мое местороложение"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
-
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="8dp"
-        android:text="Отображать последние новости"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+        app:layout_constraintTop_toBottomOf="@+id/backButton2" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FF5630"
+        android:padding="15dp"
         android:text="Уведомлять меня о новом запуске"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF5630"
+        android:padding="15dp"
+        android:text="Отображать последние новости"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="372dp"
         android:layout_height="160dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="312dp"
         android:background="@drawable/orange_card"
         android:orientation="vertical"
         app:cardBackgroundColor="@android:color/transparent"
@@ -108,13 +104,23 @@
         android:id="@+id/settingsButton"
         android:layout_width="229dp"
         android:layout_height="50dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#FF5630"
         android:text="Сбросить настройки"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/backButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/globe" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
