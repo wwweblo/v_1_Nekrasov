@@ -27,7 +27,7 @@ class PersonalArea : AppCompatActivity() {
 
         ExitBtn = findViewById(R.id.ExitButton)
         ExitBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Autorisation::class.java)
             startActivity(intent)
         }
 
@@ -39,10 +39,7 @@ class PersonalArea : AppCompatActivity() {
 
         btnOpenCamera = findViewById(R.id.btnOpenCamera)
         btnOpenCamera.setOnClickListener {
-            btnOpenCamera = findViewById(R.id.btnOpenCamera)
-            btnOpenCamera.setOnClickListener {
-                dispatchTakePictureIntent()
-            }
+            dispatchTakePictureIntent()
         }
 
     }

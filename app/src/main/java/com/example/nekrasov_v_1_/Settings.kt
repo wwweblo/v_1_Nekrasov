@@ -15,21 +15,21 @@ class Settings : AppCompatActivity() {
     lateinit var switch3: Switch
     lateinit var settingsButton: Button
     lateinit var backBtn1: ImageButton
-    lateinit var backBtn2:ImageButton
+    lateinit var backBtn2: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings)
 
         backBtn1 = findViewById(R.id.backButton1)
-        backBtn1.setOnClickListener{
+        backBtn1.setOnClickListener {
             val intent = Intent(this, PersonalArea::class.java)
             startActivity(intent)
         }
 
         backBtn2 = findViewById(R.id.backButton2)
-        backBtn2.setOnClickListener{
-            val intent = Intent(this, PersonalArea::class.java)
+        backBtn2.setOnClickListener {
+            val intent = Intent(this, Autorisation::class.java)
             startActivity(intent)
         }
 
@@ -52,18 +52,19 @@ class Settings : AppCompatActivity() {
             } else {
                 // Если Switch выключен
                 buttonView.setTextColor(Color.GRAY)
-            }}
+            }
+        }
 
         switch3 = findViewById(R.id.switch2)
         switch3.setOnCheckedChangeListener { buttonView, isChecked ->
-                if (isChecked) {
-                    // Если Switch включен
-                    buttonView.setTextColor(Color.BLACK)
-                } else {
-                    // Если Switch выключен
-                    buttonView.setTextColor(Color.GRAY)
-                }
+            if (isChecked) {
+                // Если Switch включен
+                buttonView.setTextColor(Color.BLACK)
+            } else {
+                // Если Switch выключен
+                buttonView.setTextColor(Color.GRAY)
             }
+        }
 
         settingsButton = findViewById(R.id.settingsButton)
         settingsButton.setOnClickListener {
@@ -71,7 +72,5 @@ class Settings : AppCompatActivity() {
             switch2.isChecked = true
             switch3.isChecked = true
         }
-
-
     }
 }

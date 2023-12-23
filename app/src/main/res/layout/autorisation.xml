@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Autorisation">
 
     <EditText
         android:id="@+id/editTextLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
         android:layout_marginStart="91dp"
         android:layout_marginTop="61dp"
+        android:background="@drawable/text_box"
         android:ems="10"
         android:hint="Логин"
         android:inputType="textPersonName"
+        android:padding="5dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -31,13 +33,15 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="45dp"
         android:layout_marginStart="91dp"
         android:layout_marginTop="7dp"
+        android:background="@drawable/text_box"
         android:ems="10"
         android:hint="Пароль"
         android:inputType="textPersonName"
+        android:padding="5dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLogin" />
